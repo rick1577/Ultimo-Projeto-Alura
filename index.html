@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <title>O Sussurro da Cidade Perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="Entrada sombria">
+            <p>
+                Dentro de um livro antigo, encontrei uma carta enigmática sobre uma cidade perdida, coberta por segredos
+                proibidos e protegida por sombras. A autora deixou pistas perturbadoras para localizá-la, mas há avisos 
+                claros: não siga por curiosidade, ou será consumido pelo desconhecido.
+            </p>
+            <button class="btn-proximo" data-proximo="1">Seguir o eco dos sussurros</button>
+            <button class="btn-proximo" data-proximo="2">Ignorar o aviso e explorar</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>
+                Ao seguir os sussurros, você encontra um vale coberto de névoa. Uma trilha surge à sua frente.
+                À distância, você ouve um som que parece uma voz chamando seu nome.
+            </p>
+            <button class="btn-proximo" data-proximo="3">Investigar o som</button>
+            <button class="btn-proximo" data-proximo="4">Ignorar e seguir o caminho</button>
+        </div>
+
+        <div class="passo" id="passo-2">
+            <p>
+                Explorando cegamente, você entra em um território desconhecido. Logo, percebe que está sendo observado.
+                Há olhos na escuridão...
+            </p>
+            <button class="btn-proximo" data-proximo="5">Enfrentar o desconhecido</button>
+            <button class="btn-proximo" data-proximo="6">Fugir para um lugar seguro</button>
+        </div>
+
+        <div class="passo" id="passo-3">
+            <p>
+                Você encontra uma figura encapuzada que segura um mapa. A figura sussurra: 
+                "Somente aqueles que enfrentam seus medos alcançam a verdade." 
+            </p>
+            <button class="btn-proximo" data-proximo="7">Aceitar o mapa</button>
+            <button class="btn-proximo" data-proximo="8">Recusar e sair correndo</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>
+                Ignorar o som foi sua salvação. Ao seguir pelo caminho, você descobre um portão antigo com inscrições 
+                perturbadoras que apontam para a entrada da cidade perdida.
+            </p>
+            <button class="btn-proximo" data-proximo="9">Entrar pelo portão</button>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>
+                Encarando o desconhecido, você percebe que os olhos na escuridão pertencem a criaturas feitas de sombras. 
+                Elas falam em uníssono: "A cidade não pertence aos vivos."
+            </p>
+            <button class="btn-proximo" data-proximo="10">Tentar se comunicar</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <img src="img/cenario-passo6-fuga.png" alt="Fugindo">
+            <p>Você foge, mas o sussurro nunca deixa sua mente. À noite, os olhos da escuridão ainda te observam.</p>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>
+                Com o mapa, você encontra a entrada da cidade perdida, mas percebe que o preço para entrar é alto: 
+                sacrificar algo precioso.
+            </p>
+            <button class="btn-proximo" data-proximo="11">Fazer o sacrifício</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Você sai correndo e se perde na floresta, nunca mais voltando ao mesmo lugar.</p>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>
+                Ao atravessar o portão, você sente uma presença esmagadora. A cidade está viva, observando cada passo seu.
+            </p>
+            <button class="btn-proximo" data-proximo="12">Explorar a cidade</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>
+                As criaturas oferecem uma escolha: tornar-se um deles ou ser consumido. Não há volta.
+            </p>
+            <button class="btn-proximo" data-proximo="13">Aceitar o destino</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <img src="img/cenario-passo11-sacrificio.png" alt="Sacrifício">
+            <p>
+                O sacrifício é aceito, e você adentra a cidade perdida. Tesouros e horrores aguardam, e agora você pertence a ela.
+            </p>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Dentro da cidade, você descobre verdades além da compreensão humana. Mas o que você ganha vale o custo?</p>
+        </div>
+
+        <div class="passo" id="passo-13">
+            <p>Transformado em sombra, você se torna um guardião da cidade perdida, à espera do próximo explorador.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

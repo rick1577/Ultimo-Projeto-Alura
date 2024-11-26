@@ -1,0 +1,96 @@
+/* Configurações gerais */
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(black, #1a1a1a);
+    color: #e0e0e0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    overflow: hidden;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.passo {
+    display: none;
+    max-width: 700px;
+    text-align: center;
+    position: relative;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #e60073;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(230, 0, 115, 0.7), 0 0 15px rgba(0, 0, 0, 0.5);
+    transform: scale(0.95);
+    transition: transform 0.3s ease-in-out;
+}
+
+.passo.ativo {
+    display: block;
+    transform: scale(1);
+}
+
+img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(230, 0, 115, 0.5);
+}
+
+p {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+    color: #cccccc;
+    text-shadow: 0 0 5px rgba(255, 0, 100, 0.5), 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+button {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+    border: 2px solid #e60073;
+    background: linear-gradient(45deg, #520066, #ff004f, #520066);
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 15px rgba(230, 0, 115, 0.5);
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(255, 0, 100, 0.7);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Animações visuais */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        opacity: 1;
+    }
+    20%, 24%, 55% {
+        opacity: 0.4;
+    }
+}
+
+.passo.ativo {
+    animation: flicker 3s infinite;
+}
+
+button:hover {
+    animation: flicker 0.8s infinite;
+}
